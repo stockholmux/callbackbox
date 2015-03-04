@@ -1,4 +1,4 @@
-# callbackbox.module.node.js API documentation
+# callbackbox
 
 <!-- div class="toc-container" -->
 
@@ -22,7 +22,7 @@
 <!-- div -->
 
 ### <a id="callbackbox-aug"></a>`callbackbox.aug(inObj, newAs, cb)`
-<a href="#callbackbox-aug">#</a> [&#x24C8;](/#L26 "View in source") [&#x24C9;][1]
+<a href="#callbackbox-aug">#</a> [&#x24C8;](https://github.com/stockholmux/callbackbox/blob/master/callbackbox.module.node.js#L26 "View in source") [&#x24C9;][1]
 
 Creates a function that augments `inObj` with a new property (named with `newAs`) that is the result of callback. On an error, it logs the error to the console and passes the error to the callback.
 
@@ -49,7 +49,7 @@ fs.readFile('someText.txt',callbackbox.aug(myObj, 'textfile', function(err,value
 <!-- div -->
 
 ### <a id="callbackbox-augBulk"></a>`callbackbox.augBulk(inObj, newAsArray, cb)`
-<a href="#callbackbox-augBulk">#</a> [&#x24C8;](/#L66 "View in source") [&#x24C9;][1]
+<a href="#callbackbox-augBulk">#</a> [&#x24C8;](https://github.com/stockholmux/callbackbox/blob/master/callbackbox.module.node.js#L66 "View in source") [&#x24C9;][1]
 
 Works similarly to `callbackbox.aug` but with bulk responses / arrays.
 
@@ -82,7 +82,7 @@ bulkExample(callbackbox.augBulk(inObj,[
 <!-- div -->
 
 ### <a id="callbackbox-con"></a>`callbackbox.con(inObj, cb)`
-<a href="#callbackbox-con">#</a> [&#x24C8;](/#L92 "View in source") [&#x24C9;][1]
+<a href="#callbackbox-con">#</a> [&#x24C8;](https://github.com/stockholmux/callbackbox/blob/master/callbackbox.module.node.js#L92 "View in source") [&#x24C9;][1]
 
 Simple factory that produces a callback that passes `inObj` without modification. Pass `cb` the error and log on failure.
 
